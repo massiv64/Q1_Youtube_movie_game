@@ -1,7 +1,29 @@
 #topDiv {
 	background-color: red;
 	border-radius: 10px;
-	height: 200px;
+	height: 125px;
 	width: 100%
 	
-},
+}
+
+#responseDiv {
+	padding-top: 5%;
+	height: 150px;
+}
+
+.well{
+	padding-top: 5%;
+}
+
+/*#bottomDiv {
+	background-color: red;
+	border-radius: 10px;
+	height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	bottom: 100px;
+}*/
+
+#player {
+	margin: 0 auto;
+}
