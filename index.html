@@ -6,13 +6,11 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.jsdelivr.net/lodash/4.6.1/lodash.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css"></link>
 </head>
@@ -27,18 +25,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Yung Trapp Lord</a>
+      <a class="navbar-brand" href="#">teemoApps</a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="http://www.facebook.com/wishofbrainsmoosh">Me IRL<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+<!--         <li><a href="#">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="ttp://vignette4.wikia.nocookie.net/warframe/images/5/5f/Famous-characters-Troll-face-45719.png/revision/latest?cb=20140702154027" class="dropdown-toggle" data-toggle="dropdown">OVER 90% OFF DEALS</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">OVER 90% OFF DEALS</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
@@ -46,7 +43,7 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
 <!--       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -55,26 +52,26 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-inverse navbar-right">
-        <li class="dropdown">
-          <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Ray-Ban deals <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+        <li class="active">
+          <a href="http://vignette4.wikia.nocookie.net/warframe/images/5/5f/Famous-characters-Troll-face-45719.png/revision/latest?cb=20140702154027" role="button" aria-haspopup="true" aria-expanded="false">Ray-Ban deals <span class="caret"></span></a>
+          <!-- <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
-          </ul>
+          </ul> -->
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </header>
 <div class="container-fluid">
-  <div class ="row" id="topDiv">
-     <div class="col-xs-3 text-center"></div>
-     <div class="col-xs-3 text-center"></div>
-     <div class="col-xs-3 text-center"></div>
-     <div class="col-xs-3 text-center"></div>  
+  <div class="row" id="topDiv">
+     <div class="col-xs-3"></div>
+     <div class="col-xs-3"></div>
+     <div class="col-xs-3"></div>
+     <div class="col-xs-3"></div>  
   </div>
 </div>
 <div class="row">
@@ -86,10 +83,21 @@
 <div class="row"></div>
 	<div class="col-xs-2"></div>
 		<iframe class="col-xs-8" id="player" type="text/html" width="640" height="390"
-  		src="http://www.youtube.com/embed/uUPHlAbAf2I"frameborder="0"></iframe>
-  	<div class"col-cs-2"></div>
-<!-- <div id="player"></div> -->
-<div class="footer navbar-fixed-bottom" id="bottomDiv"></div>
- 	 
+  		src="http://www.youtube.com/embed/uUPHlAbAf2I?showinfo=0"frameborder="0"></iframe>
+  	<div class"col-xs-2"></div>
+<br><br><br>
+<div class="row">
+	<div class="col-xs-12"></div>
+</div>
+<div class="row"></div>
+	<div class="col-xs-12"></div>
+	<div class="form-input col-xs-4"></div>
+		<form id="guessform">
+        	<span id="userAnswer">Name this movie!</span><input id="userinput" type="text" autocomplete="off">
+    	</form> 
+
+<div class="container-fluid col-xs-12 btmbar text-center" id="bottomDiv">
+	<h3>Powered by Google's Data API and Youtube</h3>
+</div>
 </body>
 </html>
