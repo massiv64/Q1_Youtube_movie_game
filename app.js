@@ -1,12 +1,13 @@
 $(document).ready(function(){
 	
 
-	var videoList = ["Sazz3NDldwY", "OjxZfKLO1M0","jP5e2XJsB_4", "LGmthB51XUc", "kg7goEASO5E", "LBBni_-tMNs", 
+	var videoList = ["OjxZfKLO1M0", "Sazz3NDldwY", "jP5e2XJsB_4", "LGmthB51XUc", "kg7goEASO5E", "LBBni_-tMNs", 
 	"MsSPAEtYaZE", "0lq1JIWQSlc", "qgmcXs02URY", "xJjCnWm5cvE", "1rlSjdnAKY4", "BsxYfYCbVC0", "veztNJQyRJg",
 	"uUPHlAbAf2I", "pYdjNeFh6zw", "k26hmRbDQFw", "Ocr0aNwQvVg", "zcgxBHBsl-4", "o9guyPNZglE", "a2Th8JGsJuo", 
 	"s9JqbCH4aVw", "BKDnwX9P7vo", "IKiSPUc2Jck", "d921M-ACMM4", "GQ5ICXMC4xY"];	
 
 	var newVideo = videoList[0];
+
 	var tag = document.createElement('script');
 	tag.src = "https://www.youtube.com/iframe_api";
 	var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -29,14 +30,16 @@ $(document).ready(function(){
 	function onPlayerReady(event) {
 		event.target.playVideo();
 	}
+	
+	
 	var getVideos = function(){
 		$.ajax({
-      		url: "https://www.googleapis.com/youtube/v3/videos" + newVideo,
+      		url: "https://www.googleapis.com/youtube/v3/videos",
       	dataType: "jsonp",
       	data: {
          key: "AIzaSyD22hZD7Qk15yyx-VHFuiYYdpjQAPe6nfM",
          q: "cat",
-         id: "Sazz3NDldwY",
+         id: newVideo,
          part: "snippet"
       	},
       	success: function(data){
@@ -46,13 +49,14 @@ $(document).ready(function(){
           alert (textStatus, + ' | ' + errorThrown);
      	 }
   	});
+	var $newVidUrl = $('player').attr('src', "http://www.youtube.com/embed/" + newVideo + "?autoplay=1&showinfo=0");
+		console.log($newVidUrl);
 };
-	
-
-
 
 
 });
+
+
 
 
 //Next steps:
